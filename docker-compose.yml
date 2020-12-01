@@ -1,0 +1,25 @@
+
+
+version: '3.7'
+
+services:
+  otp:
+    build: .
+    ports:
+      - 8080:8080
+    container_name: otp2
+    volumes:
+      - ./otp:/var/otp/graphs
+    command:
+      [
+          '--build',
+          '--serve',
+          '/otp2',
+      ]
+#      
+#      [
+#          '--build',
+#          '--save',
+#          '/otp2',
+#      ]
+#
