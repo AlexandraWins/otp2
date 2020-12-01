@@ -16,10 +16,4 @@ services:
           '--serve',
           '/otp2',
       ]
-#      
-#      [
-#          '--build',
-#          '--save',
-#          '/otp2',
-#      ]
-#
+#Graphen laden mit --load 
