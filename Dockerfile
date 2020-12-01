@@ -8,7 +8,7 @@ RUN apt-get update -y && apt-get install -y wget
 
 RUN wget "http://developer.trimet.org/schedule/gtfs.zip" -O otp2/trimet.gtfs.zip
 
-#kvv baut immer noch nicht 
+#kvv graph kann auf Basis dieser Daten immer noch gebaut werden im Schritt 2 -> genau mit dem Bauen der Graphen hatte ich Probleme 
 #RUN wget "https://projekte.kvv-efa.de/GTFS/google_transit.zip" -O /otp2/kvv.gtfs.zip || true
 
 RUN wget https://repo1.maven.org/maven2/org/opentripplanner/otp/$OTP_VERSION/otp-$OTP_VERSION-shaded.jar -O otp.jar
