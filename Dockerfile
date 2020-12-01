@@ -27,8 +27,6 @@ RUN mv test.pbf otp2
 
 FROM openjdk:11-jre-slim
 
-RUN mkdir otp
-
 COPY --from=gather-data otp2 /otp2
 
 ENTRYPOINT  [ "java", "-Xmx10G", "-jar", "otp2/otp.jar" ]
